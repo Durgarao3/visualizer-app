@@ -1,5 +1,7 @@
-@import '~bpk-mixins';
-@import "~bpk-tokens/tokens/base.default.scss";
+@import 'bpk-tokens/tokens/base.default';
+@import 'bpk-mixins/index';
+@import 'bpk-stylesheets/base';
+@import 'bpk-stylesheets/font';
 
 @mixin container {
   max-width: $bpk-breakpoint-desktop;
@@ -28,11 +30,16 @@
 
   &__main {
     padding: $bpk-spacing-xxl;
-
     @include container;
-
     @include bpk-breakpoint-mobile {
       padding: $bpk-spacing-base;
+    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    button {
+      margin-top: $bpk-spacing-lg;
     }
   }
 
@@ -43,7 +50,43 @@
   &__text {
     margin-bottom: $bpk-spacing-sm;
   }
+
+  &__selected-date {
+    margin-top: $bpk-spacing-base;
+    font-weight: bold;
+    color: $bpk-color-sky-blue;
+  }
 }
+
 .App__calendar {
-  margin: 20px 0;
+  margin: 20px auto;
+  padding: $bpk-spacing-lg;
+  background-color: #ffffff;
+  border-radius: $bpk-border-radius-lg;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  max-width: 400px;
+
+  @include bpk-breakpoint-mobile {
+    width: 100%;
+    padding: $bpk-spacing-base;
+    box-shadow: none;
+    border-radius: 0;
+    background-color: transparent;
+  }
+}
+
+.flight-card {
+  margin: $bpk-spacing-lg auto;
+  max-width: 400px;
+  text-align: left;
+
+  @include bpk-box-shadow-sm;
+  border-radius: $bpk-border-radius-lg;
+  background-color: $bpk-color-white;
+  padding: $bpk-spacing-base;
+
+  &:not(:last-child) {
+    margin-bottom: $bpk-spacing-lg;
+  }
 }

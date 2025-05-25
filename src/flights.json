@@ -1,0 +1,42 @@
+[
+  {
+    "flightNumber": "IN101",
+    "origin": "Delhi",
+    "destination": "Hyderabad",
+    "departureTime": "2025-05-23T07:30:00",
+    "arrivalTime": "2025-05-23T09:30:00",
+    "price": 4000
+  },
+  {
+    "flightNumber": "IN102",
+    "origin": "Delhi",
+    "destination": "Mumbai",
+    "departureTime": "2025-05-23T10:00:00",
+    "arrivalTime": "2025-05-23T12:10:00",
+    "price": 4500
+  },
+  {
+    "flightNumber": "IN103",
+    "origin": "Delhi",
+    "destination": "Bangalore",
+    "departureTime": "2025-05-24T15:00:00",
+    "arrivalTime": "2025-05-24T17:20:00",
+    "price": 4500
+  },
+  {
+    "flightNumber": "IN104",
+    "origin": "Delhi",
+    "destination": "Chennai",
+    "departureTime": "2025-05-24T09:00:00",
+    "arrivalTime": "2025-05-24T11:00:00",
+    "price": 4900
+  },
+  {
+    "flightNumber": "IN105",
+    "origin": "Delhi",
+    "destination": "Kolkata",
+    "departureTime": "2025-05-25T15:00:00",
+    "arrivalTime": "2025-05-25T15:45:00",
+    "price": 4100
+  }
+]

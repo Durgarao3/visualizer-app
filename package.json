@@ -3,22 +3,29 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@skyscanner/backpack-react-scripts": "11.2.2",
-    "@skyscanner/backpack-web": "37.0.0",
+    "@babel/runtime": "^7.27.0",
+    "@craco/craco": "^7.1.0",
+    "@skyscanner/backpack-react-scripts": "^11.2.2",
+    "@skyscanner/backpack-web": "^37.0.0",
     "@skyscanner/cra-template-backpack": "0.0.9",
-    "bpk-component-code": "4.1.2",
-    "bpk-stylesheets": "9.0.17",
-    "bpk-tokens": "36.2.3",
+    "ajv": "^8.17.1",
+    "ajv-keywords": "^5.1.0",
+    "bpk-mixins": "^42.0.1",
+    "bpk-stylesheets": "^9.0.17",
+    "bpk-tokens": "^36.2.3",
+    "date-fns": "3.3.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "sass": "1.86.3"
+    "react-scripts": "^5.0.1",
+    "react-transition-group": "^4.4.5",
+    "sass": "^1.86.3"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "craco start",
     "start-ssr": "react-scripts start-ssr",
-    "build": "react-scripts build",
-    "build-ssr": "react-scripts build-ssr",
-    "test": "react-scripts test",
+    "build": "craco build",
+    "build-ssr": "craco build-ssr",
+    "test": "craco test",
     "eject": "react-scripts eject"
   },
   "browserslist": {
@@ -34,6 +41,11 @@
     ]
   },
   "devDependencies": {
-    "@babel/preset-react": "7.26.3"
+    "@babel/core": "^7.26.10",
+    "@babel/plugin-transform-runtime": "^7.26.10",
+    "@babel/preset-env": "^7.26.9",
+    "@babel/preset-react": "^7.26.3",
+    "babel-laoder": "^0.0.1-security",
+    "babel-loader": "^10.0.0"
   }
 }

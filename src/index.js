@@ -4,7 +4,8 @@ import 'bpk-stylesheets/font';
 import 'bpk-stylesheets/font.css';
 
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import App from './App';
 
-ReactDOM.render(React.createElement(App), document.getElementById('root'));
+const root = createRoot(document.getElementById('root'));
+root.render(<App />);
